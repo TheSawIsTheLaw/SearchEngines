@@ -1,2 +1,2 @@
-# IRS
-Information retrieval systems course, BMSTU
+# ISE
+Information Search Engines course, BMSTU
