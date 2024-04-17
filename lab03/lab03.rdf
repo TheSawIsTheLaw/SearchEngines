@@ -1,0 +1,529 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPosition -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionX -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionY -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#belongs_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#belongs_to">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Song"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#is_member_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#is_member_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Musician"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Band"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Musician"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Song"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Musician"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#date">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#etc_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#etc_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Musician"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#foundation_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#foundation_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#date"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Band"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#person_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#person_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Band"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Name"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">69.92292339959903</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">400.28906222796127</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#release_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#release_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#date"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Album -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Album">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">234.69320913762243</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">243.2278583273653</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Band -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Band">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">44.873613249486205</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">172.71552091623036</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Bitmaker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Bitmaker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Musician"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">256.9292291212288</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">222.58178366999914</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Drummer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Drummer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Musician"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">194.7522451719099</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">105.04484414530661</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Guitarist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Guitarist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Musician"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">234.0718020316213</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">272.0868649376052</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Musician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Musician">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">82.91952433943376</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.55688075834587</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Song -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Song">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">271.9199574317727</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">144.55147975815578</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Vocalist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Vocalist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Musician"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">21.334205425330865</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">223.00807898518173</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Aaron_Kitcher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Aaron_Kitcher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Drummer"/>
+        <untitled-ontology-5:is_member_of rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Black_Tongue"/>
+        <untitled-ontology-5:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</untitled-ontology-5:age>
+        <untitled-ontology-5:person_name>Аарон Китчер</untitled-ontology-5:person_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Autoinduced_Attrition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Autoinduced_Attrition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Song"/>
+        <untitled-ontology-5:belongs_to rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Scrub_Tape"/>
+        <untitled-ontology-5:etc_name>Autoinduced Attrition</untitled-ontology-5:etc_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Black_Tongue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Black_Tongue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Band"/>
+        <untitled-ontology-5:etc_name>Black Tongue</untitled-ontology-5:etc_name>
+        <untitled-ontology-5:foundation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">666</untitled-ontology-5:foundation_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Come -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Come">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Song"/>
+        <untitled-ontology-5:belongs_to rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Born_Hanged_/_Falsifier"/>
+        <untitled-ontology-5:etc_name>Coma</untitled-ontology-5:etc_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Falsifier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Falsifier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Song"/>
+        <untitled-ontology-5:belongs_to rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Born_Hanged_/_Falsifier"/>
+        <untitled-ontology-5:etc_name>Falsifier</untitled-ontology-5:etc_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Fred_Durst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Fred_Durst">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Vocalist"/>
+        <untitled-ontology-5:is_member_of rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Limp_Bizkit"/>
+        <untitled-ontology-5:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53</untitled-ontology-5:age>
+        <untitled-ontology-5:person_name>Фред Дёрст</untitled-ontology-5:person_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Istasha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Istasha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Band"/>
+        <untitled-ontology-5:etc_name>Istasha</untitled-ontology-5:etc_name>
+        <untitled-ontology-5:foundation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">666</untitled-ontology-5:foundation_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Istasha_bitmaker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Istasha_bitmaker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Bitmaker"/>
+        <untitled-ontology-5:is_member_of rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Istasha"/>
+        <untitled-ontology-5:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</untitled-ontology-5:age>
+        <untitled-ontology-5:person_name>Неизвестно</untitled-ontology-5:person_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Krovostok -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Krovostok">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Band"/>
+        <untitled-ontology-5:etc_name>Кровосток</untitled-ontology-5:etc_name>
+        <untitled-ontology-5:foundation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">666</untitled-ontology-5:foundation_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Limp_Bizkit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Limp_Bizkit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Band"/>
+        <untitled-ontology-5:etc_name>Limp Bizkit</untitled-ontology-5:etc_name>
+        <untitled-ontology-5:foundation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1337</untitled-ontology-5:foundation_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Pamyat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Pamyat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Song"/>
+        <untitled-ontology-5:belongs_to rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Studen"/>
+        <untitled-ontology-5:etc_name>Память</untitled-ontology-5:etc_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Pollution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Pollution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Song"/>
+        <untitled-ontology-5:belongs_to rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Three_Dollar_Bill"/>
+        <untitled-ontology-5:etc_name>Pollution</untitled-ontology-5:etc_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Pora_Domoy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Pora_Domoy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Song"/>
+        <untitled-ontology-5:belongs_to rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Studen"/>
+        <untitled-ontology-5:etc_name>Пора Домой</untitled-ontology-5:etc_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Sam_Rivers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Sam_Rivers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Guitarist"/>
+        <untitled-ontology-5:is_member_of rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Limp_Bizkit"/>
+        <untitled-ontology-5:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">46</untitled-ontology-5:age>
+        <untitled-ontology-5:person_name>Сэм Риверс</untitled-ontology-5:person_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Scrub_Tape -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Scrub_Tape">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Album"/>
+        <untitled-ontology-5:belongs_to rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Istasha"/>
+        <untitled-ontology-5:etc_name>Scrub Tape</untitled-ontology-5:etc_name>
+        <untitled-ontology-5:foundation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</untitled-ontology-5:foundation_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Snort_Cocaine_For_Jesus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Snort_Cocaine_For_Jesus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Song"/>
+        <untitled-ontology-5:belongs_to rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Scrub_Tape"/>
+        <untitled-ontology-5:etc_name>Snort Cocaine For Jesus</untitled-ontology-5:etc_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Stalemate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Stalemate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Song"/>
+        <untitled-ontology-5:belongs_to rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Three_Dollar_Bill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Studen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Studen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Album"/>
+        <untitled-ontology-5:belongs_to rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Krovostok"/>
+        <untitled-ontology-5:etc_name>Студень</untitled-ontology-5:etc_name>
+        <untitled-ontology-5:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2012</untitled-ontology-5:release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Teyen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Teyen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Vocalist"/>
+        <untitled-ontology-5:is_member_of rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Black_Tongue"/>
+        <untitled-ontology-5:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</untitled-ontology-5:age>
+        <untitled-ontology-5:person_name>Алекс Тейен</untitled-ontology-5:person_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Three_Dollar_Bill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Three_Dollar_Bill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Album"/>
+        <untitled-ontology-5:belongs_to rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Limp_Bizkit"/>
+        <untitled-ontology-5:etc_name>Three Dollar Bill, Y&apos;all $</untitled-ontology-5:etc_name>
+        <untitled-ontology-5:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">666</untitled-ontology-5:release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Born_Hanged_/_Falsifier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Born_Hanged_/_Falsifier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Album"/>
+        <untitled-ontology-5:belongs_to rdf:resource="http://www.semanticweb.org/dyakuba/ontologies/2024/3/untitled-ontology-5#Black_Tongue"/>
+        <untitled-ontology-5:etc_name>Born Hanged / Falsifier</untitled-ontology-5:etc_name>
+        <untitled-ontology-5:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2014</untitled-ontology-5:release_date>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
